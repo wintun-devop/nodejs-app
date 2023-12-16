@@ -1,4 +1,4 @@
-### create react project with vite
+### Create React Project with Vite
 ```
 npm create vite@latest front-end-client --template react-ts
 ```
@@ -9,7 +9,10 @@ npm i  @mui/material @mui/icons-material @emotion/react @emotion/styled
 
 ### react hook form(https://react-hook-form.com/get-started)
 ```
-npm install react-hook-form
+npm i react-hook-form
 ```
 
-### 
+### Axio(https://axios-http.com/docs/intro)
+```
+npm i axios
+```
