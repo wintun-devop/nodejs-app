@@ -12,6 +12,14 @@ npx prisma init
 ```
 npx prisma migrate dev --name 1st-migration
 ```
+### generate prisma if necessary for sqlite
+```
+npx prisma generate
+```
+### Initialize prisma studio
+```
+npx prisma studio
+```
 
 ### configure sqllite for prisma
 - comment on original provider and add the flollowing sqlite provider
