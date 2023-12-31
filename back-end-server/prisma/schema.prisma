@@ -5,7 +5,21 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String    @id @default(cuid())
+  email      String    @unique
+  profileurl String?   @default("profile.png")
+  password   String
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime?
 }
